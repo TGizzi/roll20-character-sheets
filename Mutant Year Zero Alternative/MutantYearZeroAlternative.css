@@ -78,19 +78,31 @@ input[type='radio']{
 
 input[type='text']{
    background-color:#f6eadc;
-   margin-left:5px;
-   margin-top:3px;
-   margin-bottom:3px;
+   margin-left     :5px;
+   margin-top      :3px;
+   margin-bottom   :3px;
 }
 
 input[type='number']{
-   margin-top:3px;
+   margin-top   :3px;
    margin-bottom:3px;
-   font-weight:bolder;
+   font-weight  :bolder;
 }
 
 textarea {
-   resize:vertical;
+  border-bottom : 1px dotted #FCD116;
+  font-size     : 12px;
+  font-weight   : normal;
+  height        : 50px;
+  line-height   : 18px;
+  overflow      : hidden;
+  overflow-wrap : break-word;
+  padding       : 2px;
+  resize        : vertical;
+  text-align    : left;
+  vertical-align: top;
+  white-space   : pre-line;
+  width         : 95%;
 }
 
 select {
@@ -111,27 +123,27 @@ select {
    background-color:#f6eadc;
 }
 
-.sheet-value-singledigit {
-   width:36px !important;
+input.sheet-value-singledigit[type="number"] {
+   width:36px;
 }
 
-.sheet-value-doubledigit {
-   width:39px !important;
+input.sheet-value-doubledigit[type="number"] {
+   width:39px;
 }
 
-.sheet-value-tripedigit {
-   width:50px !important;
+input.sheet-value-tripedigit[type="number"] {
+   width:50px;
 }
 
 
 /* Type Text */
 
 .sheet-textinput-name {
-   width: 300px;
+   width: 95%;
 }
 
 .sheet-textinput-role {
-   width: 205px;
+   width: 95%;
 }
 
 .sheet-textinput-skills {
@@ -188,7 +200,6 @@ select {
 
 /* Text Area */
 
-.sheet-text-apperance {
    background-color:#f6eadc;
    margin-left: 5px;
    margin-bottom: 5px;
@@ -259,36 +270,40 @@ color: white;
 Meta Windows
 --------- */
 .sheet-character-wrapper{
-     width:940px; 
+     width:870px; 
 }
 
 .sheet-meta1 {
-     float:left;
-     padding-right:20px;
+     width: 32%;
+     display: inline-block;
+     margin-right: 2.5%;
+     vertical-align: top;
 }
 
 .sheet-meta2 {
-     float:left;
-     padding-bottom:20px;
-     padding-right:20px; 
+     display: inline-block;
+     margin-right: 2%;
+     margin-bottom: 3%; 
+     width: 53%;
 }
 
 .sheet-meta3 {
-     float:left; 
-     padding-bottom:20px;     
+      display: inline-block;
+      width: 44%;
+      vertical-align: top;    
 }
 
 .sheet-meta4 {
-     float:left;      
+           
 }
 
 .sheet-meta5 {
-     float:left;
+     
      padding-bottom:20px;      
 }
 
 .sheet-meta6 {
-     float:left;      
+           
 }
 
 /* ------
@@ -327,8 +342,8 @@ Character Sheet
 
 .sheet-name-role {
    width: 620px;
-   float: left; 
-   padding-bottom:20px;        
+   display: inline-block; 
+   margin-bottom:2%;        
 }
 
 .sheet-relationships {
@@ -422,4 +437,20 @@ table, th, td {
 
 .sheet-table-notop{
    border-top:none;
+}
+
+
+/* Todd Changes */
+
+div.sheet-col-right{
+  width: 65%;
+  display: inline-block;
+}
+
+div.sheet-talent-column{
+  width: 20%;
+}
+
+.charsheet{
+  margin-left: -2%;
 }
