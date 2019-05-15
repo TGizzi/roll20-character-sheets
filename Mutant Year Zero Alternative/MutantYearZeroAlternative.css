@@ -454,3 +454,7 @@ div.sheet-talent-column{
 .charsheet{
   margin-left: -2%;
 }
+
+.charsheet input[type='radio'] {
+    margin: 1.5%;
+}
